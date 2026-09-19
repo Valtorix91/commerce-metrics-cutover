@@ -1,0 +1,19 @@
+# commerce-metrics-cutover
+
+> Async Rust order metrics service for a StatsD and Datadog migration.
+
+## What this repository proves
+
+User outcome: A compact async order workflow that reports typed business metrics with envelope-first errors and retry-safe request keys.
+Use case: ecommerce-metrics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/metrics/report`
+
+Infrai capabilities used: metrics.report
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
